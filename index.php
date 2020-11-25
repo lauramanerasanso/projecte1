@@ -1,3 +1,9 @@
+<?php
+  include 'php/idioma.php';
+  session_start();
+  $traduccions = [["Veure l'item"],["Ver el producto"],["Show details"]];
+
+?>
 <!DOCTYPE html>
 <html lang="ca">
   <head>
@@ -13,7 +19,6 @@
     <?php
       include 'php/header.php';
     ?>
-    <h1 style="text-align: center;">LLISTA ITEMS</h1>
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
           <?php
@@ -40,7 +45,7 @@
                     <div class='card-body'>
                       <h5 class='card-title'><?php echo $nom ?></h5>
                       <p class='card-text'><?php echo $preu ?> €</p>
-                      <a href='php/fitxa.php?id=<?php echo $id ?>' class='btn btn-info stretched-link'>Veure l'item</a>
+                      <a href='php/fitxa.php?id=<?php echo $id ?>' class='btn btn-info stretched-link'><?php if($_SESSION['lang']=='en'){ echo $traduccions[2][0];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][0];}else{echo $traduccions[0][0];} ?></a>
                     </div>
                   </div>
                 </div>
