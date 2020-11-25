@@ -1,5 +1,5 @@
 <?php
-  include 'php/idioma.php';
+  include 'idioma.php';
 
   $traduccions = [["Afegir a la cistella"],["Añadir a la cesta"],["Add to cart"]];
 
