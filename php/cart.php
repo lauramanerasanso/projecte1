@@ -1,3 +1,9 @@
+<?php
+  include 'idioma.php';
+
+  $traduccions = [["Producte", "Preu unitari", "Quantitat", "Continuar comprant", "Acabar i pagar"],["Producto", "Precio unitario", "Cantidad", "Seguir comprando", "Terminar y pagar"],["Product", "Unit price", "Quantity", "Continue shopping", "Finish and pay"]];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,9 +29,15 @@
                     <thead>
                         <tr>
                             <th scope="col-2">#</th> 
-                            <th scope="col-5">Producte</th>
-                            <th scope="col-3">Preu unitari</th>
-                            <th scope="col-2">Quantitat</th>
+                            <th scope="col-5">
+                                <?php if($_SESSION['lang']=='en'){ echo $traduccions[2][0];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][0];}else{echo $traduccions[0][0];} ?>
+                            </th>
+                            <th scope="col-3">
+                                <?php if($_SESSION['lang']=='en'){ echo $traduccions[2][1];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][1];}else{echo $traduccions[0][1];} ?>
+                            </th>
+                            <th scope="col-2">
+                                <?php if($_SESSION['lang']=='en'){ echo $traduccions[2][2];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][2];}else{echo $traduccions[0][2];} ?>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -78,11 +90,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <a href='../index.php' class='btn btn-dark btn-lg btn-block'>Continuar comprant</a>
+                        <a href='../index.php' class='btn btn-dark btn-lg btn-block'>
+                            <?php if($_SESSION['lang']=='en'){ echo $traduccions[2][3];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][3];}else{echo $traduccions[0][3];} ?>
+                        </a>
                     </div>
                     <div class="col-sm">
                         <form action='destroy_sess.php'>
-                            <input type="submit" class="btn btn-info btn-lg btn-block" name="sessDestroy" value="Acabar i pagar"/>
+                            <input type="submit" class="btn btn-info btn-lg btn-block" name="sessDestroy" value="<?php if($_SESSION['lang']=='en'){ echo $traduccions[2][4];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][4];}else{echo $traduccions[0][4];} ?>"/>
                         </form>
                     </div>
                 </div>
