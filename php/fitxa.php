@@ -1,3 +1,9 @@
+<?php
+  include 'php/idioma.php';
+
+  $traduccions = [["Afegir a la cistella"],["Añadir a la cesta"],["Add to cart"]];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +55,9 @@
                             <br>
                             <h6><?php echo $desc ?></h6>
                             <br>                 
-                            <a href='addCart.php?id=<?php echo $id ?>' class='btn btn-outline-info btn-lg btn-block'>Afegir a la cistella</a>
+                            <a href='addCart.php?id=<?php echo $id ?>' class='btn btn-outline-info btn-lg btn-block'>
+                                <?php if($_SESSION['lang']=='en'){ echo $traduccions[2][0];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][0];}else{echo $traduccions[0][0];} ?>
+                            </a>
                     </div>
             <?php
               }
