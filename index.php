@@ -1,6 +1,6 @@
 <?php
   include 'php/idioma.php';
-  session_start();
+
   $traduccions = [["Veure l'item"],["Ver el producto"],["Show details"]];
 
 ?>
