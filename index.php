@@ -33,7 +33,7 @@
                 die("Connection failed: " . $conn->connect_error);
             }
 
-            $sql = "SELECT productes.id as id, prod_lang.trad_nom as nom, productes.preu as preu from prod_lang join productes ON productes.id = prod_lang.id_prod where prod_lang.idioma='ES';";
+            $sql = "SELECT productes.id as id, prod_lang.trad_nom as nom, productes.preu as preu from prod_lang join productes ON productes.id = prod_lang.id_prod where prod_lang.idioma='".$_SESSION['lang']."';";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
