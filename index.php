@@ -1,5 +1,4 @@
 <?php
-  include 'php/idioma.php';
 
   $traduccions = [["Veure l'item"],["Ver el producto"],["Show details"]];
 
