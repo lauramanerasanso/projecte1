@@ -92,7 +92,7 @@
                 <div class="row">
                     <div class="col-sm">
                         <a href='../index.php' class='btn btn-dark btn-lg btn-block'>
-                            <?php if($_SESSION['lang']=='en'){ echo $traduccions[2][3];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][3];}else{echo $traduccions[0][3];} ?>
+                            <?php if($_SESSION['lang']=='EN'){ echo $traduccions[2][3];}else if($_SESSION['lang']=='ES'){ echo $traduccions[1][3];}else{echo $traduccions[0][3];} ?>
                         </a>
                     </div>
                     <div class="col-sm">
