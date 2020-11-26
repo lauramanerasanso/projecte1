@@ -1,8 +1,6 @@
 <?php
     session_start();
-    if(!($_SESSION['lang'])){
-        $_SESSION['lang']='CA';
-    }
+
     $traduccions = [["Producte", "Preu unitari", "Quantitat", "Continuar comprant", "Acabar i pagar"],["Producto", "Precio unitario", "Cantidad", "Seguir comprando", "Terminar y pagar"],["Product", "Unit price", "Quantity", "Continue shopping", "Finish and pay"]];
 
 ?>
@@ -57,7 +55,8 @@
                 }
                 for( $i = 0 ; $i < count($_SESSION['carreto']) ; $i++){
 
-                    $sql = "SELECT id, nom, preu FROM productes WHERE id = ". $_SESSION['carreto'][$i][0] . ";";
+                    $sql2 = "SELECT id, nom, preu FROM productes WHERE id = ". $_SESSION['carreto'][$i][0] . ";";
+                    $sql = "SELECT productes.id as id, prod_lang.trad_nom as nom, productes.preu as preu from prod_lang join productes ON productes.id = prod_lang.id_prod where prod_lang.idioma='".$_SESSION['lang']."' and productes.id=". $_SESSION['carreto'][$i][0] . ";";
                     $result = $conn->query($sql);
 
                     if($result->num_rows > 0){

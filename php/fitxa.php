@@ -1,8 +1,6 @@
 <?php
     session_start();
-    if(!($_SESSION['lang'])){
-        $_SESSION['lang']='CA';
-    }
+
     $traduccions = [["Afegir a la cistella"],["Añadir a la cesta"],["Add to cart"]];
 
 ?>
@@ -39,7 +37,6 @@
 
             $id_get = $_GET['id'];
 
-            $sql2 = "SELECT id, nom, descripcio, preu FROM productes WHERE id = $id_get";
             $sql = "SELECT productes.id as id, prod_lang.trad_desc as descripcio, prod_lang.trad_nom as nom, productes.preu as preu from prod_lang join productes ON productes.id = prod_lang.id_prod where prod_lang.idioma='".$_SESSION['lang']."' and productes.id=$id_get;";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
