@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if(!($_SESSION['lang'])){
+        $_SESSION['lang']='CA';
+    }
     $traduccions = [["Afegir a la cistella"],["Añadir a la cesta"],["Add to cart"]];
 
 ?>

@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if(!($_SESSION['lang'])){
+        $_SESSION['lang']='CA';
+    }
     $traduccions = [["Producte", "Preu unitari", "Quantitat", "Continuar comprant", "Acabar i pagar"],["Producto", "Precio unitario", "Cantidad", "Seguir comprando", "Terminar y pagar"],["Product", "Unit price", "Quantity", "Continue shopping", "Finish and pay"]];
 
 ?>

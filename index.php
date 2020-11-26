@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if(!($_SESSION['lang'])){
+      $_SESSION['lang']='CA';
+    }
     $traduccions = [["Veure l'item"],["Ver el producto"],["Show details"]];
 
 ?>
