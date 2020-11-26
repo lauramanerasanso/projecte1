@@ -9,5 +9,5 @@ if(isset($_SESSION['lang'])){
     $_SESSION['lang']='ca';
 }
 
-header('Location: '.$_SERVER['HTTP_REFERER']);
+header('Location: '.$_SERVER['REQUEST_URI']);
 ?>
