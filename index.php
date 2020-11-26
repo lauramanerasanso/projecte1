@@ -30,7 +30,7 @@
                 die("Connection failed: " . $conn->connect_error);
             }
 
-            $sql = "SELECT productes.id as id, prod_lang.trad_nom as nom, productes.preu as preu from prod_lang join productes ON productes.id = prod_lang.id_prod where prod_lang.idioma=".$_SESSION['lang'].";";
+            $sql = "SELECT productes.id as id, prod_lang.trad_nom as nom, productes.preu as preu from prod_lang join productes ON productes.id = prod_lang.id_prod where prod_lang.idioma='".$_SESSION['lang']."';";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
@@ -45,7 +45,7 @@
                     <div class='card-body'>
                       <h5 class='card-title'><?php echo $nom ?></h5>
                       <p class='card-text'><?php echo $preu ?> €</p>
-                      <a href='php/fitxa.php?id=<?php echo $id ?>' class='btn btn-info stretched-link'><?php if($_SESSION['lang']=='EN'){ echo $traduccions[2][0];}else if($_SESSION['lang']=='ES'){ echo $traduccions[1][0];}else{echo $traduccions[0][0];} ?></a>
+                      <a href='php/fitxa.php?id=<?php echo $id ?>' class='btn btn-info stretched-link'><?php if($_SESSION['lang']=='EN'){ echo $traduccions[2][0];}else if($_SESSION['lang']==''){ echo $traduccions[1][0];}else{echo $traduccions[0][0];} ?></a>
                     </div>
                   </div>
                 </div>
