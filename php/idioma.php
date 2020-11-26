@@ -8,4 +8,6 @@ if(isset($_SESSION['lang'])){
 }else{
     $_SESSION['lang']='ca';
 }
+
+header('Location: '.$_SERVER['HTTP_REFERER']);
 ?>
