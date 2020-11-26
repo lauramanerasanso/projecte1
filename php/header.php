@@ -18,6 +18,7 @@
               <li class="nav-item">
                   <a class="nav-link" href="../php/cart.php"><i class="fas fa-shopping-cart"></i></a>
               </li>
+              
             </ul>
         </div>
 </nav>
