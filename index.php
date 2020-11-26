@@ -1,6 +1,6 @@
 <?php
-
-  $traduccions = [["Veure l'item"],["Ver el producto"],["Show details"]];
+    session_start();
+    $traduccions = [["Veure l'item"],["Ver el producto"],["Show details"]];
 
 ?>
 <!DOCTYPE html>

@@ -1,6 +1,6 @@
 <?php
-
-  $traduccions = [["Afegir a la cistella"],["Añadir a la cesta"],["Add to cart"]];
+    session_start();
+    $traduccions = [["Afegir a la cistella"],["Añadir a la cesta"],["Add to cart"]];
 
 ?>
 <!DOCTYPE html>

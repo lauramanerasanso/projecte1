@@ -1,6 +1,6 @@
 <?php
-
-  $traduccions = [["Producte", "Preu unitari", "Quantitat", "Continuar comprant", "Acabar i pagar"],["Producto", "Precio unitario", "Cantidad", "Seguir comprando", "Terminar y pagar"],["Product", "Unit price", "Quantity", "Continue shopping", "Finish and pay"]];
+    session_start();
+    $traduccions = [["Producte", "Preu unitari", "Quantitat", "Continuar comprant", "Acabar i pagar"],["Producto", "Precio unitario", "Cantidad", "Seguir comprando", "Terminar y pagar"],["Product", "Unit price", "Quantity", "Continue shopping", "Finish and pay"]];
 
 ?>
 <!DOCTYPE html>
