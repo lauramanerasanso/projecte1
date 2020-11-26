@@ -10,9 +10,9 @@
                         Idioma
                       </a>
                       <div class="dropdown-menu" role="menu" aria-labelledby="idoma">
-                        <a class="dropdown-item" href="idioma.php?lang=ca"> CA</a>
-                        <a class="dropdown-item" href="idioma.php?lang=es"> ES</a>
-                        <a class="dropdown-item" href="idioma.php?lang=en"> EN</a>
+                        <a class="dropdown-item" href="../php/idioma.php?lang=ca"> CA</a>
+                        <a class="dropdown-item" href="../php/idioma.php?lang=es"> ES</a>
+                        <a class="dropdown-item" href="../php/idioma.php?lang=en"> EN</a>
                       </div>
               </li>
               <li class="nav-item">

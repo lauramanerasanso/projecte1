@@ -11,6 +11,6 @@ if(isset($_SESSION['lang'])){
     
 }
 
-header('Location: ../index.php');
+header('Location: '.$_SERVER['REQUEST_URI']);
 
 ?>
