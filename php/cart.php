@@ -97,7 +97,7 @@
                     </div>
                     <div class="col-sm">
                         <form action='destroy_sess.php'>
-                            <input type="submit" class="btn btn-info btn-lg btn-block" name="sessDestroy" value="<?php if($_SESSION['lang']=='en'){ echo $traduccions[2][4];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][4];}else{echo $traduccions[0][4];} ?>"/>
+                            <input type="submit" class="btn btn-info btn-lg btn-block" name="sessDestroy" value="<?php if($_SESSION['lang']=='EN'){ echo $traduccions[2][4];}else if($_SESSION['lang']=='ES'){ echo $traduccions[1][4];}else{echo $traduccions[0][4];} ?>"/>
                         </form>
                     </div>
                 </div>
