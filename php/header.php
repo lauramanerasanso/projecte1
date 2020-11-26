@@ -10,15 +10,15 @@
                         Idioma
                       </a>
                       <div class="dropdown-menu" role="menu" aria-labelledby="idoma">
-                        <a class="dropdown-item" href="../php/idioma.php?lang=ca"> CA</a>
-                        <a class="dropdown-item" href="../php/idioma.php?lang=es"> ES</a>
-                        <a class="dropdown-item" href="../php/idioma.php?lang=en"> EN</a>
+                        <a class="dropdown-item" href="../php/idioma.php?lang=CA"> CA</a>
+                        <a class="dropdown-item" href="../php/idioma.php?lang=ES"> ES</a>
+                        <a class="dropdown-item" href="../php/idioma.php?lang=EN"> EN</a>
                       </div>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="../php/cart.php"><i class="fas fa-shopping-cart"></i></a>
               </li>
-              
+
             </ul>
         </div>
 </nav>

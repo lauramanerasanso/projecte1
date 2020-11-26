@@ -6,7 +6,7 @@ if(isset($_SESSION['lang'])){
         $_SESSION['lang'] = $_GET['lang'];
     }
 }else{
-    $_SESSION['lang']='ca';
+    $_SESSION['lang']='CA';
 }
 
 header('Location: '.$_SERVER['HTTP_REFERER']);

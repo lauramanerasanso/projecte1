@@ -45,7 +45,7 @@
                     <div class='card-body'>
                       <h5 class='card-title'><?php echo $nom ?></h5>
                       <p class='card-text'><?php echo $preu ?> €</p>
-                      <a href='php/fitxa.php?id=<?php echo $id ?>' class='btn btn-info stretched-link'><?php if($_SESSION['lang']=='en'){ echo $traduccions[2][0];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][0];}else{echo $traduccions[0][0];} ?></a>
+                      <a href='php/fitxa.php?id=<?php echo $id ?>' class='btn btn-info stretched-link'><?php if($_SESSION['lang']=='EN'){ echo $traduccions[2][0];}else if($_SESSION['lang']=='ES'){ echo $traduccions[1][0];}else{echo $traduccions[0][0];} ?></a>
                     </div>
                   </div>
                 </div>

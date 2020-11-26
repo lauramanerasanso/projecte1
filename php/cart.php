@@ -29,13 +29,13 @@
                         <tr>
                             <th scope="col-2">#</th> 
                             <th scope="col-5">
-                                <?php if($_SESSION['lang']=='en'){ echo $traduccions[2][0];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][0];}else{echo $traduccions[0][0];} ?>
+                                <?php if($_SESSION['lang']=='EN'){ echo $traduccions[2][0];}else if($_SESSION['lang']=='ES'){ echo $traduccions[1][0];}else{echo $traduccions[0][0];} ?>
                             </th>
                             <th scope="col-3">
-                                <?php if($_SESSION['lang']=='en'){ echo $traduccions[2][1];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][1];}else{echo $traduccions[0][1];} ?>
+                                <?php if($_SESSION['lang']=='EN'){ echo $traduccions[2][1];}else if($_SESSION['lang']=='ES'){ echo $traduccions[1][1];}else{echo $traduccions[0][1];} ?>
                             </th>
                             <th scope="col-2">
-                                <?php if($_SESSION['lang']=='en'){ echo $traduccions[2][2];}else if($_SESSION['lang']=='es'){ echo $traduccions[1][2];}else{echo $traduccions[0][2];} ?>
+                                <?php if($_SESSION['lang']=='EN'){ echo $traduccions[2][2];}else if($_SESSION['lang']=='ES'){ echo $traduccions[1][2];}else{echo $traduccions[0][2];} ?>
                             </th>
                         </tr>
                     </thead>
