@@ -1,6 +1,6 @@
 <?php
 
-    $traduccionsHead = [["Tenda de na Laura"],["Tienda de Laura"],["Laura's shop"]];
+    $traduccionsHead = [["Tenda de na Laura", "Idioma"],["Tienda de Laura", "Idioma"],["Laura's shop", "Language"]];
 
 ?>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -14,7 +14,7 @@
               </li>
               <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="idioma" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-language"></i>
+                      <?php if($_SESSION['lang']=='EN'){ echo $traduccionsHead[2][1];}else if($_SESSION['lang']=='ES'){ echo $traduccionsHead[1][1];}else{echo $traduccionsHead[0][1];} ?>
                       </a>
                       <div class="dropdown-menu" role="menu" aria-labelledby="idoma">
                         <a class="dropdown-item" href="../php/idioma.php?lang=CA"> CA</a>
