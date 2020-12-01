@@ -1,6 +1,13 @@
+<?php
+    session_start();
 
+    $traduccions = [["Tenda de na Laura"],["Tienda de Laura"],["Laura's shop"]];
+
+?>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="../index.php">Tenda de na Laura</a>
+        <a class="navbar-brand" href="../index.php">
+        <?php if($_SESSION['lang']=='EN'){ echo $traduccions[2][0];}else if($_SESSION['lang']=='ES'){ echo $traduccions[1][0];}else{echo $traduccions[0][0];} ?>
+        </a>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
