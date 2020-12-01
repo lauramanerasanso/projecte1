@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    $traduccions = [["Producte", "Preu unitari", "Quantitat", "Continuar comprant", "Acabar i pagar"],["Producto", "Precio unitario", "Cantidad", "Seguir comprando", "Terminar y pagar"],["Product", "Unit price", "Quantity", "Continue shopping", "Finish and pay"]];
+    $traduccions = [["Producte", "Preu unitari", "Quantitat", "Continuar comprant", "Acabar i pagar", "Carretó"],["Producto", "Precio unitario", "Cantidad", "Seguir comprando", "Terminar y pagar", "Carrito"],["Product", "Unit price", "Quantity", "Continue shopping", "Finish and pay", "Cart"]];
 
 ?>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-        Carretó
+    <?php if($_SESSION['lang']=='EN'){ echo $traduccions[2][5];}else if($_SESSION['lang']=='ES'){ echo $traduccions[1][5];}else{echo $traduccions[0][5];} ?>
     </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
