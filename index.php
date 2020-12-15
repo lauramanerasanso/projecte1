@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(!isset($_SESSION['lang'])){
+    if(!($_SESSION['lang'])){
       $_SESSION['lang']='CA';
     }
     $traduccions = [["Veure l'item", "Tenda - LMS"],["Ver el producto", "Tienda - LMS"],["Show details", "Shop - LMS"]];
