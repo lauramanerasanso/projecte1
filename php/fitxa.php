@@ -35,7 +35,7 @@
             }
 
 
-            $id_get = $_GET['id'];
+            //$id_get = $_GET['id'];
 
             $sql = "SELECT productes.id as id, prod_lang.trad_desc as descripcio, prod_lang.trad_nom as nom, productes.preu as preu from prod_lang join productes ON productes.id = prod_lang.id_prod where prod_lang.idioma='".$_SESSION['lang']."' and productes.id=$id_get;";
             $result = $conn->query($sql);
