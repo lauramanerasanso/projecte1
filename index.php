@@ -46,7 +46,7 @@
             ?>
                 <div class='col mb-4'>
                   <div class='card'>
-                    <img src='imatges/<?php echo $id ?>.jpg' class='card-img-top' alt='<?php echo $nom ?>'>
+                    <img src='/imatges/<?php echo $id ?>.jpg' class='card-img-top' alt='<?php echo $nom ?>'>
                     <div class='card-body'>
                       <h5 class='card-title'><?php echo $nom ?></h5>
                       <p class='card-text'><?php echo $preu ?> €</p>

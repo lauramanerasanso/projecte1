@@ -47,7 +47,7 @@
                     $preu = $row['preu'];
             ?>
                     <div class='col-6'>
-                            <img class='img-fluid' src='../imatges/<?php echo $id ?>.jpg' alt='<?php echo $nom ?>' width='100%'>
+                            <img class='img-fluid' src='/imatges/<?php echo $id ?>.jpg' alt='<?php echo $nom ?>' width='100%'>
                     </div>
                     <div class='col-6'>
                             <h2><?php echo $nom ?></h2>
